@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import './globalStyles.scss';
 
   function component() {

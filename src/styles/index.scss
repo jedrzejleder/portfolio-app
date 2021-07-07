@@ -1,36 +1,6 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-ul {
-  margin: 0;
-  height: 70px;
-  background-color: $grey;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-
-  div {
-    display: flex;
-
-    li {
-      list-style: none;
-      margin-right: 50px;
-      font-size: 25px;
-
-      a {
-        @include link-style;
-        color: white;
-        transition: color 0.3s;
-      }
-
-      a:hover {
-        color: $blue;
-      }
-    }
-  }
-}
-
 .hero-img {
   position: relative;
   height: calc(100vh - 70px);

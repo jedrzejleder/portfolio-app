@@ -1,11 +1,11 @@
 class Hobby {
     name: string;
     desc: string;
-    time: number;
-    constructor(name: string, desc:string, time: number) {
+    pic: string;
+    constructor(name: string, desc:string, pic: string) {
         this.name = name;
         this.desc = desc;
-        this.time = time;
+        this.pic = pic;
     }
 }
 

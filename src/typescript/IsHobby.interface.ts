@@ -1,7 +1,7 @@
 interface isHobby {
     name: string;
     desc: string;
-    time: number;
+    pic: string;
 }
 
 export default isHobby;

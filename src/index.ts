@@ -1,26 +1,19 @@
 import _ from 'lodash';
 import './globalStyles.scss';
+import Hobby from '../src/typescript/Hobby.class'
+import isHobby from '../src/typescript/IsHobby.interface'
 
-  function component() {
-    const site = document.createElement('main');
-    const navbar = document.createElement('ul');
+const hobbiesContainer = document.querySelector('.hobbies');
 
-    navbar.innerHTML = `
-    <div>
-        <li><button id="home">It's me!</button></li>
-    </div>
-    <div>
-        <li><button>O mnie</button></li>
-        <li><button>Hobby</button></li>
-        <li><button>Kontakt</button></li>
-    </div>
-    `;
-
-    site.appendChild(navbar);
-
-    // site.appendChild(Home());
-
-    return site;
-  }
-
-  // document.body.appendChild(component());
+const hobby1 = new Hobby('jedzenie', 'jedzenie jedzenia', 45);
+const printObj = (obj: isHobby) => {
+    if(hobbiesContainer) {
+        hobbiesContainer.innerHTML = `
+    <h1>${obj.name}</h1>
+    <p>${obj.desc}</p>
+    <p>${obj.time}</p>
+    `
+    } else{
+        console.log('xd');
+    }
+}

@@ -1,0 +1,10 @@
+@mixin link-style {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: black;
+
+  a:active,
+  a:visited {
+    color: inherit;
+  }
+}

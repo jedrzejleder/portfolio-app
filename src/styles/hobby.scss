@@ -2,7 +2,7 @@
 @import './mixins.scss';
 
 .hobbies {
-  width: 1000px;
+  width: 70%;
   margin: 100px auto;
   overflow: hidden;
   position: relative;
@@ -33,6 +33,7 @@
       position: relative;
       background-image: url('https://cdn.pixabay.com/photo/2020/08/18/06/06/extreme-5497194_960_720.jpg');
       background-size: cover;
+      background-position: center center;
 
       .content {
         position: absolute;

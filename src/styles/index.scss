@@ -18,6 +18,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -25,16 +26,22 @@
     h1 {
       font-size: 70px;
       margin-bottom: 20px;
+
+      @media (max-width: 860px) {
+        font-size: 35px;
+      }
     }
 
     button {
-      padding: 15px 20px;
+      padding: 20px 25px;
       margin-top: 20px;
       background-color: $blue;
       border: none;
       border-radius: 5px;
       transition: transform 0.3s;
       cursor: pointer;
+      font-size: 18px;
+      color: white;
 
       a {
         @include link-style;

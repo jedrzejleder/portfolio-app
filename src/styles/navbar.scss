@@ -33,6 +33,10 @@ ul {
 
 .nav-logo {
   transition: opacity .3s ease-out;
+
+  &--hide {
+  opacity: 0;
+  }
 }
 
 #logo {
@@ -43,10 +47,6 @@ ul {
 .hamburger,
 .mobile-nav-links {
   display: none;
-}
-
-.hide {
-  opacity: 0;
 }
 
 @media (max-width: 860px) {

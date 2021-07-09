@@ -9,16 +9,16 @@
 
   .container {
     @include shadow;
-    width: 80%;
-    padding: 50px;
+    width: 70%;
+    padding: 100px 50px;
     border-radius: 10px;
     background-color: lightgray;
     color: black;
     display: flex;
 
-    .left {
+    &__left {
       text-align: center;
-      img {
+      &__photo {
         height: 300px;
         width: 300px;
         border-radius: 50%;
@@ -26,7 +26,7 @@
       }
     }
 
-    .right {
+    &__right {
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -38,21 +38,22 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .wrapper {
     margin-top: 20px;
 
     .container {
+      padding: 50px 25px;
       flex-direction: column;
 
-      .left {
-        img {
+      &__left {
+        &__photo {
           width: 180px;
           height: 180px;
         }
       }
 
-      .right {
+      &__right {
         border: none;
         border-top: 2px solid $blue;
       }

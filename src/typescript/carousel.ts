@@ -10,34 +10,33 @@ if (urlTail === 'hobby.html') {
     let counter = 1;
     const size = hobbies[0].clientWidth;
 
-    slide.style.transform = `translateX(${-size * counter}px)`
-
+    slide.style.transform = `translateX(${-size * counter}px)`;
 
     nextBtn.addEventListener('click', () => {
         if (counter >= hobbies.length - 1) return;
         slide.style.transition = 'transform 0.4s ease-in-out';
         counter++;
-        slide.style.transform = `translateX(${-size * counter}px)`
-    })
+        slide.style.transform = `translateX(${-size * counter}px)`;
+    });
 
     prevBtn.addEventListener('click', () => {
         if (counter <= 0) return;
         slide.style.transition = 'transform 0.4s ease-in-out';
         counter--;
-        slide.style.transform = `translateX(${-size * counter}px)`
-    })
+        slide.style.transform = `translateX(${-size * counter}px)`;
+    });
 
     slide.addEventListener('transitionend', () => {
         if (hobbies[counter].id === 'lastClone') {
             slide.style.transition = 'none';
             counter = hobbies.length - 2;
-            slide.style.transform = `translateX(${-size * counter}px)`
+            slide.style.transform = `translateX(${-size * counter}px)`;
         }
 
         if (hobbies[counter].id === 'firstClone') {
             slide.style.transition = 'none';
             counter = hobbies.length - counter;
-            slide.style.transform = `translateX(${-size * counter}px)`
+            slide.style.transform = `translateX(${-size * counter}px)`;
         }
-    })
-}
+    });
+};

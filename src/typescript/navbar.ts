@@ -2,7 +2,7 @@ const Navbar = () => {
     const nav = document.createElement('ul');
     nav.innerHTML = `
             <div class="nav-logo">
-                <li><a href="index.html" id="home"><i id="logo" class="fas fa-user-astronaut"></i>It's me!</a></li>
+                <li><a href="index.html" id="home"><i id="logo" class="fas fa-terminal"></i>It's me!</a></li>
             </div>
             <div class="nav-links">
                 <li class="nav-item"><a href="aboutMe.html">O mnie</a></li>

@@ -2,6 +2,7 @@ import './globalStyles.scss';
 import myHobbies from './assets/hobbies';
 import Navbar from './typescript/navbar';
 import createHobbySlide from './typescript/hobbySlide';
+import data from './assets/data.json';
 
 document.querySelector('nav').appendChild(Navbar());
 
@@ -17,7 +18,7 @@ hamburger.addEventListener('click', () => {
 
 const slides = document.querySelector('.hobbies__slides');
 
-const myHobbiesSlides = myHobbies.map(hobby => createHobbySlide(hobby));
+const myHobbiesSlides = data.map(hobby => createHobbySlide(hobby));
 
 const first = <HTMLDivElement> myHobbiesSlides[0].cloneNode(true);
 const last = <HTMLDivElement> myHobbiesSlides[myHobbiesSlides.length - 1].cloneNode(true);

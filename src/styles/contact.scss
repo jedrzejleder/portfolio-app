@@ -31,12 +31,14 @@
 
 @media (max-width: 860px) {
   .contacts {
+    padding: 40px;
+
     &__header {
     font-size: 1.7rem;
-  }
+    }
 
   &__contact {
     font-size: 1.4rem;
-  }
+    }
   }
 }

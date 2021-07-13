@@ -28,6 +28,10 @@
       justify-content: center;
       border-left: 2px solid $blue;
       padding: 20px;
+
+      &__text {
+        font-size: 20px;
+      }
     }
   }
 
@@ -49,6 +53,10 @@
       &__right {
         border: none;
         border-top: 2px solid $blue;
+
+        &__text {
+          font-size: 16px;
+        }
       }
     }
   }

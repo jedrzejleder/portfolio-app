@@ -20,7 +20,7 @@ ul {
 
       a {
         @include link-style;
-        
+
         color: white;
         transition: color 0.3s;
       }
@@ -33,10 +33,10 @@ ul {
 }
 
 .nav-logo {
-  transition: opacity .3s ease-out;
+  transition: opacity 0.3s ease-out;
 
   &--hide {
-  opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -48,6 +48,10 @@ ul {
 .hamburger,
 .mobile-nav-links {
   display: none;
+}
+
+.active {
+  color: $blue;
 }
 
 @media (max-width: 860px) {
